@@ -14,6 +14,6 @@ mf.forEach(function (item) {
       a.setAttribute(att.name, att.value);
   }
   a.href = 'mailto:' + info.user + '@' + info.host + (fields ? '?' + fields : '');
-  a.appendChild(document.createTextNode(item.innerText || (info.user + '@' + info.host)));
+  a.innerHTML = item.innerHTML || info.user + '@' + info.host;
   item.parentNode.replaceChild(a, item);
 });
