@@ -7,7 +7,7 @@ mf.forEach(function (item) {
     if (i === 'user' || i === 'host') continue;
     fields += i + '=' + encodeURIComponent(info[i]) + '&';
   }
-  fields = query.replace(/&$/, '');
+  fields = fields.replace(/&$/, '');
   var a = document.createElement('a');
   a.id = item.id;
   a.className = item.className;
