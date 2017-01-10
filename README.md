@@ -10,7 +10,7 @@ The target tag is not required to be a `span` as in the example, but it must con
 
 You may have as many **mailto-fairy** calls as you wish, and each may have different information.
 
-`user` and `host` fields are required; the `subject` and `body` fields, as well as all other supported mailto fields (e.g. `cc`, `bcc`, and so on) are optional.
+`user` and `host` fields are required; the `subject` and `body` fields, as well as all other supported mailto fields (e.g. `cc`, `bcc`, and so on), are optional.
 
 ## mailto-fairy is not ideal.
 If **mailto-fairy** were to become popular, it would not take much for email harvesting bots to defeat it. After all, the data is right in the `data-mailto-fairy` attribute. The ideal solution would be to hard-code all the variables into an externally located javascript file, which would then do the replacements without needing to pull any information from the HTML page.
