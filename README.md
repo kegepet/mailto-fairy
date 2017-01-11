@@ -2,7 +2,7 @@
 A small script for dynamically writing out mailto links on any page, (somewhat) safe from email harvesting bots.
 
 ## How It Works
-All elements on the page with a `data-mailto-fairy` attribute will be replaced with a newly created anchor element. All attributes of the original source element apart from `data-mailto-fairy`, as well as any custom ones, will be preserved in the newly created anchor. All children of the source element will also be preserved in the newly created anchor element.
+All elements on the page with a `data-mailto-fairy` attribute will be replaced with a newly created anchor element. All attributes of the original source element apart from `data-mailto-fairy`, as well as any custom ones, will be preserved in the newly created anchor. All children of the source element will also be preserved.
 
 You may have as many calls to **mailto-fairy** on the page as you wish, and each may have different information.
 
