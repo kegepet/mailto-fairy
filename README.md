@@ -9,7 +9,7 @@ You may have as many calls to **mailto-fairy** on the page as you wish, and each
 ## Usage Example (HTML)
 ````HTML
 <span data-mailto-fairy='{"user":"theusername","host":"thehostname","subject":"this is the subject","body":"this is the body"}'></span>
-<script src="mailto-fairy.js"></script>
+<script src="/path/to/mailto-fairy.js"></script>
 ````
 The source element is not required to be a `span` as in the example, but it must contain the `data-mailto-fairy` attribute. Its value must be well-formed JSON, as shown. Notice the double quotes around each variable's key and value (both). This is very important--**they must be double-quoted.** Any double quotes within the value of any variable must be escaped, e.g. `"body":"The dev said, \"All double quotes must be escaped.\""`.
 
